@@ -75,8 +75,8 @@
             <div class="navpart">
                 <img src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt=""/>
                 <div class="np-child">
-                <h3>Sign In🔸</h3>
-                <p>for FREE Shipping 🚚</p>
+                <h3 id="displyname">Sign In🔸</h3>
+                <p id="insider">for FREE Shipping 🚚</p>
                 </div>
 
                 <!-- MegaMenu Sign in  -->
@@ -89,12 +89,12 @@
                             </div>
                             <div class="facetext">
                                 <h3>Good morning, Beautiful. ☀️</h3>
-                                <p>Sign in for <strong>FREE standard shipping</strong> on all orders.</p>
+                                <p id="advr">Sign in for <strong>FREE standard shipping</strong> on all orders.</p>
                             </div>
                         </div>
                         <div class="btns">
-                            <button>Sign In</button>
-                            <button>Create Account</button>
+                            <button id="snin">Sign In</button>
+                            <button id="snup">Create Account</button>
                         </div>
                     </div>
                     <div class="first-half">
@@ -859,7 +859,7 @@
                     <li>
                         <a href="#" class="ancr">Sale & Offers</a>
                          <!-- MegaMenu of Sale & Offers  -->
-                         <div class="MegaMenu1 sale new">
+                         <div class="MegaMenu1 new sale">
                             
                             <div class="AN">
                                 <ul>
@@ -901,7 +901,99 @@
         <!-- Post-Nav End  -->
     </nav>
 
-    
+    <!-- Sign-Up Form  -->
+
+    <div class="overlay" id="ovrly"></div>
+    <div class="sign-up">
+        <div class="hdr">
+            <p>Create an Account</p>
+            <span id="rmve">✕</span>
+        </div>
+        <div class="innerform">
+            <div class="btimg"><img src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg" alt=""></div>
+            <span>Join the Beauty Insider loyalty program. Earn points, get  <strong>FREE standard shipping</strong>, redeem rewards, and more.</span>
+            <form id="frm">
+                <div class="name">
+                    <input type="text" placeholder="First Name" id="fname" class="inpt small" required>
+                    <input type="text" placeholder="Last Name" id="lname" class="inpt small" required>
+                </div>
+                <div class="mail">
+                    <input type="email" id="email" class="inpt big" placeholder="Enter Email" required>
+                </div>
+                <div class="password">
+                    <input type="password" id="pswrd" class="inpt big" placeholder="Password (6 to 12 characters)" required>
+                </div>
+                <div class="nmbr">
+                    <input type="number" id="number" class="inpt big" placeholder="Phone number (optional)" >
+                </div>
+                <h3>Enter your birthday to receive a free gift every year</h3>
+                <div class="dob">
+                    <select  id="month" class="inpt small" required>
+                        <option value="" disabled selected hidden>Month</option>
+                        <option value=""></option>
+                        <option value="January">January</option>
+                        <option value="Febraury">Febraury</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">Navomber</option>
+                        <option value="December">December</option>
+                    </select>
+                    <select id="date" class="inpt small" required>
+                        <option value="" disabled selected hidden>DAY</option>
+                        <option value=""> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <div class="code">
+                    <input type="text" placeholder="ZIP Code" id="zcode" class="inpt big"required>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="chkbx" value="Keep me signed in" ><span>Keep me signed in</span>
+                </div>
+                <div class="join">
+                    <input type="submit" value="Join Now">
+                </div>
+            </form>
+        </div>
+        <div class="terms">
+        <p>By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident and (1) have read Sephora’s <span><a href="#">Privacy Policy</a></span> and Notice of Financial Incentive, (2), agree to <span><a href="#">Terms of Use, Beauty Insider Terms</a></span>, and to automatically receive Beauty Insider offers and notifications via email.</p></div>
+    </div>
 
 </body>
+<script src="index.js"></script>
 </html>
