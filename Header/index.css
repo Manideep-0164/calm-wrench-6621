@@ -3,17 +3,34 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+* > a:link{
+    text-decoration: none;
+    color: blue;
+}
+* > a:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+*>a:visited{
+    color: blue;
+}
+* > p{
+    color: grey;
+}
 /* pre-nav  */
 nav > .pre-nav {
     width: 100%;
     height: 90px;
-    background-color: rgb(79 15 109);
+    background-color: rgb(18 49 114);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     cursor: pointer;
+}
+nav > .pre-nav>p{
+    color: white;
 }
 nav >.pre-nav:hover{
     text-decoration: underline;
@@ -22,9 +39,10 @@ nav >.pre-nav:hover{
 /* main-nav  */
 
 nav > .main-nav {
+    position: relative;
     width: 92%;
-    margin: 45px 62px;
-    margin-top: 37px;
+    margin: 28px 62px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,10 +87,13 @@ nav > .main-nav > .navpart:nth-child(5) > img{
 nav > .main-nav > .navpart{
     display: flex;
     align-items: center;
+    padding: 18px 0px;
+    height: 100%;
 }
 nav > .main-nav > .navpart > .np-child:hover{
     cursor:pointer;
     border-bottom:3px solid black;
+    line-height: 20px;
 }
 .navpart > .np-child {
     margin-left: 15px;
@@ -81,3 +102,362 @@ nav > .main-nav > .navpart > .np-child:hover{
 nav > .main-nav > .navpart  span{
     font-size: 20px;
 }
+/* MegaMenu  */
+.MegaMenu{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #f6f6f8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.navpart:hover .MegaMenu{
+    opacity: 1;
+    visibility: visible;
+}
+/* Megamenu of Store & Services  */
+.store{
+    top: 100%;
+    left: 40%;
+    height: 540px;
+    width: 480px;
+    z-index: 1;
+}
+.MegaMenu > .CYS {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MegaMenu > .CYS > button {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 11px 15px;
+    border: none;
+}
+.MegaMenu > .CYS > button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+.MegaMenu > .FaS {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.MegaMenu > .FaS:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.MegaMenu > .FaS > img {
+    width: 30px;
+    padding-left: 18px;
+    padding-right: 10px;
+}
+.MegaMenu > .HaS {
+    width: 100%;
+    background-color: #f6f6f8;
+}
+.Has-Va {
+    height: 60px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.Has-Va > a{
+    font-size: 18px;
+}
+.SSW{
+    height: 94px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    background-color: white;
+}
+.SSW:hover{
+    cursor: pointer;
+}
+.SSW:hover span{
+    text-decoration: underline;
+}
+.SSW > img {
+    width: 68px;
+    padding-right: 20px;
+}
+.SSW > span{
+    font-size: 20px;
+}
+/* END Store & Services  */
+
+/* MegaMenu of Sign-in  */
+.sign-in{
+    top: 100%;
+    left: 65%;
+    height: 794px;
+    width: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track { 
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+.gmb{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-top: 27px;
+    padding-bottom: 10px;
+}
+.gmb > .face {
+    width: 18%;
+}
+.gmb > .face > img{
+    width:100%;
+}
+.gmb > .facetext {
+    padding-left: 20px;
+    line-height: 22px;
+}
+.gmb > .facetext > p {
+    padding-right: 80px;
+}
+.gmb > .facetext > p > strong {
+    color: black;
+}
+.btns{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns > button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 220px;
+    border-radius: 25px;
+    font-weight: bold;
+    height: 41px;
+    cursor: pointer;
+}
+.btns > button:nth-child(1) {
+    border: none;
+}
+.btns > button:nth-child(1):hover {
+    background-color: grey;
+}
+.btns > button:nth-child(2){
+    background-color: white;
+    color: black;
+    margin-left: 18px;
+}
+.first-half{
+    background-color: white;
+    margin-bottom: 10px;
+    padding-top: 9px;
+    height: 228px;
+}
+.first-half > .bp , .first-half > .bi{
+    margin: 0px 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 18px 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 89px;
+    border-radius: 6px;
+}
+.bpin {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.bpin:hover , 
+.bp > p:nth-child(3):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.bp > p:nth-child(2){
+    cursor: pointer;
+}
+.bp > p:nth-child(3){
+    line-height: 28px;
+    background-color: #e5f2fd;
+    margin-top: 5px;
+    background-size: 32px;
+    color: black;
+}
+.bpin > img {
+    width: 8%;
+    padding-right: 10px;
+}
+.first-half > .bi{
+    height: 45px;
+}
+.bi:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.bi > img {
+    width: 30%;
+}
+.MegaMenu  .S-H-C{
+    height: 56px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    padding: 10px 22px;
+    background-color: white;
+}
+.S-H-C:hover{
+    cursor: pointer;
+}
+.S-H-C > div:nth-child(1) {
+    width: 7%;
+    margin-right: 17px;
+}
+.S-H-C > div > img{
+    width: 100%;
+}
+.S-H-C>.text-init>span{
+line-height: 27px;
+}
+.S-H-C>.text-init>span:hover{
+    text-decoration: underline;
+}
+
+/* END of Sign-in & Sign-up  */
+
+/* Post-Nav Start  */
+
+.post-nav{
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.post-nav > .container{
+    width: 92%;
+    margin: auto;
+}
+.container > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container > ul > li{
+    list-style: none;
+    padding: 20px;
+}
+.container > ul > li >a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+/* Post-nav End  */
+
+/* MegaMenu post-nav  */
+
+.MegaMenu1{
+    position:absolute;
+    width: 100%;
+    padding: 31px 60px;
+    top: 100%;
+    left: 0%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    /* border: 2px solid red; */
+}
+.container > ul > li:hover .MegaMenu1{
+    opacity: 1;
+    visibility: visible;
+}
+.MegaMenu1 > .AN{
+    width: 255px;
+    padding: 0px 12px
+}
+.MegaMenu1 >.AN> ul > li {
+    list-style: none;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.new > .img1 {
+    /* border: 2px solid red; */
+    width: 21.6%;
+    margin-left: 32px
+}
+.new > .img1 > img {
+    width: 100%;
+}
+.new >div:nth-child(3) {
+    margin-left: 300px;
+}
+.MegaMenu1 > .AN li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.MegaMenu1 > .img1:hover {
+    cursor: pointer;
+}
+.MegaMenu1 > .light > ul > li{
+    font-weight:lighter;
+}
+.MegaMenu1 > .light > ul > li:nth-child(1),
+.MegaMenu1 > .BAZ > ul > li:nth-child(2),
+.MegaMenu1 > .BAZ > ul > li:nth-child(3),
+.MegaMenu1 > .Ck > ul > li:nth-child(6) ~ li ,
+.MegaMenu1 > .AM > ul > li:nth-child(2),
+.MegaMenu1 > .Nw > ul > li,
+.AS > ul > li:nth-child(7),
+.Trtmnt > ul > li:nth-child(5),
+.EC > ul > li:nth-child(4),
+.Ss > ul > li:nth-child(4),
+.Ss > ul > li:nth-child(5),
+.AH > ul > li:nth-child(2),
+.Styl > ul > li:nth-child(6),
+.Styl > ul > li:nth-child(7)
+{
+    font-weight:bold;
+}
+.image > .img1 > img {
+    margin-left: 157px;
+    width: 86%;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.image > .gifts > img {
+    margin-left: 157px;
+    width: 57%;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
