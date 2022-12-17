@@ -92,9 +92,10 @@
                                 <p id="advr">Sign in for <strong>FREE standard shipping</strong> on all orders.</p>
                             </div>
                         </div>
+                        <div id="addfnct"></div>
                         <div class="btns">
-                            <button id="snin">Sign In</button>
-                            <button id="snup">Create Account</button>
+                            <button id="snin" class="sgn">Sign In</button>
+                            <button id="snup" class="sgn">Create Account</button>
                         </div>
                     </div>
                     <div class="first-half">
@@ -177,6 +178,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="incld"></div>
                 </div>
 
                 <!-- Megamenu Sign-In END   -->
@@ -904,10 +906,11 @@
     <!-- Sign-Up Form  -->
 
     <div class="overlay" id="ovrly"></div>
+    
     <div class="sign-up">
         <div class="hdr">
-            <p>Create an Account</p>
-            <span id="rmve">✕</span>
+            <p class="cna">Create an Account</p>
+            <span id="rmve" class="remv">✕</span>
         </div>
         <div class="innerform">
             <div class="btimg"><img src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg" alt=""></div>
@@ -979,11 +982,8 @@
                         <option value="30">30</option>
                     </select>
                 </div>
-                <div class="code">
-                    <input type="text" placeholder="ZIP Code" id="zcode" class="inpt big"required>
-                </div>
                 <div class="check">
-                    <input type="checkbox" id="chkbx" value="Keep me signed in" ><span>Keep me signed in</span>
+                    <input type="checkbox" id="chkbx" ><span>Keep me signed in</span>
                 </div>
                 <div class="join">
                     <input type="submit" value="Join Now">
@@ -991,7 +991,39 @@
             </form>
         </div>
         <div class="terms">
-        <p>By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident and (1) have read Sephora’s <span><a href="#">Privacy Policy</a></span> and Notice of Financial Incentive, (2), agree to <span><a href="#">Terms of Use, Beauty Insider Terms</a></span>, and to automatically receive Beauty Insider offers and notifications via email.</p></div>
+        <p><span><a href="#">Privacy Policy</a></span> agree to <span><a href="#">Terms of Use, Beauty Insider Terms</a></span>, and to automatically receive Beauty Insider offers and notifications via email.</p></div>
+    </div>
+
+    <div class="signin sign-up">
+        <div class="innerform">
+        <div class="six hdr">
+            <p class="cna">Sign In</p>
+            <span class="remv" id="exit">✕</span>
+        </div>
+        <span id="sndesc">Sign in or create the account to enjoy <strong>FREE standard shipping</strong> on all orders.</span>
+        <p id="invalid"></p>
+        <form id="snform">
+            <div class="mail">
+                <input type="email" placeholder="Email Address*" id="snemail" class="inpt big sn" required>
+            </div>
+            <div class="pass">
+                <input type="password" placeholder="Password*" class="inpt big sn" id="snpass" required>
+            </div>
+            <div class="check fp">
+                <input type="checkbox"  class="larger"><span>Keep me Signed in</span>
+                <p><a href="#" id="fgt">Forgot password?</a></p>
+            </div>
+            <div class="signinbtn join">
+                <input type="submit" id="sign-in" >
+            </div>
+        </form>
+        <hr>
+        <div class="scnd_hlf">
+        <p>New to Sephora ?</p>
+        <div class="join"><input type="button" class="sgn" onclick="signup()" value="Create Account"></div>
+        <p><a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></p>
+        </div>
+        </div>
     </div>
 
 </body>
