@@ -675,3 +675,146 @@ form  .small{
 .scnd_hlf > p:nth-child(3){
     text-align: center;
 }
+.banner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    margin: 9px;
+    margin-bottom: 65px;
+}
+.banner > .card {
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #3f0c66;
+}
+.contnt{
+    padding: 16px 25px;
+    color: white;
+}
+.contnt > h2 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+.contnt > p {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.banner > .violet {
+    background-color: #b252c0;
+}
+.banner > .teal {
+    background-color:#70a6b0 ;
+}
+.banner > .teal > .contnt,
+.banner > .teal > .contnt > p{
+    color: black;
+}
+.card:hover 
+ {
+    cursor: pointer;
+}
+.card:hover .contnt > p,.card:hover .contnt > h3{
+    text-decoration: underline;
+}
+.bottom_container{
+    margin: 0px 65px;
+}
+.bottom_container > .choose {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 14px;
+    position: relative;
+}
+.bottom_container > h2 {
+    margin-bottom: 35px;
+}
+.choose > .CFU_Cont {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 18px 16px;
+}
+.CFU_Cont:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    cursor: pointer;
+}
+.CFU_Cont > p{
+    color: #2f2626;
+    font-size: 19px;
+    margin-top: 4px;
+    text-align: left;
+    margin-left: 16px;
+}
+.CFU_Cont > img {
+    width: 90%;
+    margin-bottom: 8px;
+}
+.CFU_Cont > h4 {
+    text-align: left;
+    margin-left: 16px;
+}
+
+.bottom_container > .BO{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 17px;
+    margin-bottom: 40px;
+}
+.bottom_container > #bfr {
+    margin-top: 75px;
+    font-size: 26px;
+}
+.DMF{
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.DMF:hover {
+    box-shadow: rgba(53, 179, 151, 0.16) 0px 1px 4px, rgb(109, 235, 168) 0px 0px 0px 3px;
+}
+.DMF > img {
+    width: 100%;
+}
+.BOinnr {
+    padding: 20px;
+    margin-bottom: 110px;
+}
+.DMF > .BOinnr > h3 {
+    margin-bottom: 5px;
+}
+.DMF > .BOinnr > h3+p{
+   color: black;
+   font-size: 19px;
+}
+.DMF > .BOinnr > p:nth-child(3){
+    margin: 10px 0px;
+ }
+ .BOftr{
+    position: absolute;
+    bottom: 42px;
+ }
+ .BOftr > input {
+    font-size: 16px;
+    border-radius: 38px;
+    font-weight: bold;
+    padding: 10px 31px;
+    background-color: white;
+    margin-right: 36px;
+ }
+ .BOftr > a {
+    font-size: 19px;
+ }
+ .BOftr > input:hover {
+    cursor: pointer;
+    color: grey;
+    border-color: gray;
+ }
+ .hr1{
+    border: none;
+    height: 0.1px;
+    background-color: #efefef;
+    margin-bottom: 45px;
+ }
