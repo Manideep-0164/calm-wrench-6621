@@ -57,7 +57,6 @@ form.addEventListener("submit",(e)=>{
         number:form.number.value,
         month:form.month.value,
         date:form.date.value,
-        zcode:form.zcode.value,
         checkbox:form.chkbx.value,
     }
     userInput.push(userData);
