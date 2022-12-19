@@ -29,10 +29,7 @@ signIn.addEventListener("click",()=>{
     document.querySelector(".signin").classList.add("showsignin");
     document.querySelector(".overlay").classList.add("showviewport")
 })
-onclk.addEventListener("click",()=>{
-    document.querySelector(".signin").classList.add("showsignin");
-    document.querySelector(".overlay").classList.add("showviewport")
-})
+
 
 overlay.addEventListener("click",()=>{
     document.querySelector(".sign-up").classList.remove("opensign-up");
