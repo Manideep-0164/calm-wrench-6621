@@ -818,3 +818,37 @@ form  .small{
     background-color: #efefef;
     margin-bottom: 45px;
  }
+.footer{
+    background-color: black;
+    color: white;
+    padding: 0px 65px;
+} 
+.footrhead{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    padding: 50px 0px;
+}
+.FCSY{
+    display: flex;
+    align-items: center;
+}
+.FCSimg{
+    width: 10%;
+    margin-right: 11px;
+}
+.FCSimg > img{
+    width: 100%;
+}
+.FCSY > .alrts > img{
+    background-color: white;
+}
+.FCStxt > p {
+    color: white;
+}
+.FCSY:hover{
+    cursor: pointer;
+}
+.FCSY:hover > .FCStxt > h4{
+    text-decoration: underline;
+}
