@@ -13,6 +13,7 @@ let login = document.getElementById("sign-in");
 let rmbtn = document.querySelector(".btns");
 let pushit = document.getElementById("incld")
 let signbtn = document.createElement("button");
+let onclk = document.getElementById("whvr");
 let userData = {};
 
 function signup(){
@@ -25,6 +26,10 @@ signUp.addEventListener("click",()=>{
     document.querySelector(".overlay").classList.add("showviewport")
 });
 signIn.addEventListener("click",()=>{
+    document.querySelector(".signin").classList.add("showsignin");
+    document.querySelector(".overlay").classList.add("showviewport")
+})
+onclk.addEventListener("click",()=>{
     document.querySelector(".signin").classList.add("showsignin");
     document.querySelector(".overlay").classList.add("showviewport")
 })
